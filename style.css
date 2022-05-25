@@ -31,6 +31,7 @@ Custom properties
 /* Reset margins and padding */
 body,
 h1,
+h2,
 p,
 fieldset,
 input,
@@ -131,6 +132,18 @@ button:focus {
     background-color: var(--clr-orange);
 }
 
+.order-2 {
+    order: 2;
+}
+
+.order-3 {
+    order: 3;
+}
+
+.order-4 {
+    order: 4;
+}
+
 
 @media (min-width: 35rem) {
     .margin {
@@ -187,10 +200,10 @@ fieldset {
     border-radius: 1.33em;
 }
 
-img {
+.header-img {
     border-radius: 50%;
-    background-color: var(--clr-medium-grey);
     padding: 0.9em;
+    background-color: var(--clr-medium-grey);
 }
 
 .attribution { 
@@ -213,5 +226,57 @@ img {
     .container {
         max-width: 29.2rem;
         padding: 2em 1.8em;
+    }
+}
+
+/* ---------------
+    Modal
+-----------------*/
+
+.overlay {
+    /* display: none; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsla(0, 0%, 0%, 0.5);
+}
+
+
+#modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background-color: var(--clr-dark-blue);
+    max-width: 23.5rem;
+    padding: 2.66em 1.8em 3em 1.8em;
+    margin: 1.33em;
+    border-radius: 1.33em;
+}
+
+.modal-heading {
+    order: 3;
+    margin: 1.33em 0;
+}
+
+#modal-msg {
+    order: 2;
+    color: var(--clr-orange);
+    border-radius: 1em;
+    margin-top: 1.66em;
+    padding: 0.5em 1.06em 0.26em 1.06em;
+    background-color: var(--clr-medium-grey);
+}
+
+@media (min-width: 35rem) {
+    #modal {
+        max-width: 29.2rem;
+        padding-bottom: 3.33em;
     }
 }
