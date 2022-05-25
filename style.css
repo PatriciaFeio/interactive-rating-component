@@ -1,2 +1,217 @@
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+/* --------------
+Custom properties
+----------------*/
+
+:root {
+    /* colors */
+    --clr-dark-blue: hsl(215, 20%, 16%);
+    --clr-light-grey: hsl(217, 12%, 63%);
+    --clr-medium-grey: hsl(230, 6%, 19%);
+    --clr-orange: hsl(25, 97%, 53%);
+    --clr-very-dark-blue: hsl(216, 12%, 8%);
+    --clr-white: hsl(0, 0%, 100%);
+
+    /* font-sizes */
+    --fs-400: 15px;
+}
+
+/* --------------
+    Reset
+----------------*/
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins and padding */
+body,
+h1,
+p,
+fieldset,
+input,
+figure,
+picture {
+    margin: 0;
+    padding: 0; 
+}
+
+/* set up the body */
+body {
+    font-family: 'Overpass', sans-serif;
+    font-size: var(--fs-400);
+    color: var(--clr-white);
+    background-color: var(--clr-very-dark-blue);
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {  
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* ---------------
+    Typography
+-----------------*/
+h1 {
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+p,
+span {
+    color: var(--clr-light-grey);
+}
+
+button {
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    color: var(--clr-white);
+}
+
+button:hover,
+button:focus {
+    color: var(--clr-orange);
+    background-color: var(--clr-white);
+}
+
+.attribution { 
+    font-size: 11px;
+}
+
+  /* ---------------
+    Utility classes
+-----------------*/
+
+.margin-top {
+    margin-top: 1.8em;
+}
+
+.margin-bottom {
+    margin-bottom: 1.8em;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--clr-medium-grey);
+    cursor: pointer;
+}
+
+.circle:hover,
+.circle:focus {
+    background-color: var(--clr-light-grey);
+}
+
+.circle:active {
+    background-color: var(--clr-orange);
+}
+
+
+@media (min-width: 35rem) {
+    .margin {
+        margin: 2em;
+    }
+
+    .margin-top {
+        margin-top: 2em;
+    }
+    
+    .margin-bottom {
+        margin-bottom: 2em;
+    }
+}
+
+ /* ---------------
+    Components
+-----------------*/
+
+button {
+    background-color: var(--clr-orange);
+    border: 0;
+    border-radius: 20px;
+    padding: 1.3em 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+label {
+    width: inherit;
+    height: inherit;
+    padding-top: 0.33rem;
+}
+
+input[type=radio] {
+    appearance: none;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ---------------
+    Layout
+-----------------*/
+
+.container {
+    background-color: var(--clr-dark-blue);
+    max-width: 23.5rem;
+    padding: 2em 1.66em;
+    margin: 1.33em;
+    border-radius: 1.33em;
+}
+
+img {
+    border-radius: 50%;
+    background-color: var(--clr-medium-grey);
+    padding: 0.9em;
+}
+
+.attribution { 
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 20px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.attribution a:hover,
+.attribution a:focus { 
+    color: var(--clr-orange); 
+}
+
+@media (min-width: 35rem) {
+    .container {
+        max-width: 29.2rem;
+        padding: 2em 1.8em;
+    }
+}
