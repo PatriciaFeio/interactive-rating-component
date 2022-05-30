@@ -20,16 +20,15 @@ inputRadio.forEach(element => {
 // hide modal after a certain amount of time
 formSubmitBtn.addEventListener('click', function(event) {
     event.preventDefault()
-    overlay.style.display = 'flex'
 
     inputRadio.forEach(element => {
         if(element.checked) {
             element.checked = false
-        }
+            overlay.style.display = 'flex'
+            setTimeout(() => {
+                overlay.style.display = 'none'
+            }, 2000);
+        } else {}
     })
-
-    setTimeout(() => {
-        overlay.style.display = 'none'
-    }, 2000);
 })
 
