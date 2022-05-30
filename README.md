@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/mobilefirst-interactive-rating-component-with-flexbox-7inIMGcTty)
-- Live Site URL: [Add live site URL here](https://interactive-rating-component-pmq24xowu-patriciafeio1.vercel.app/)
+- Solution URL: [https://www.frontendmentor.io/solutions/mobilefirst-interactive-rating-component-with-flexbox-7inIMGcTty](https://www.frontendmentor.io/solutions/mobilefirst-interactive-rating-component-with-flexbox-7inIMGcTty)
+- Live Site URL: [https://interactive-rating-component-sable.vercel.app/](https://interactive-rating-component-sable.vercel.app/)
 
 ## My process
 
@@ -44,9 +44,9 @@ Users should be able to:
 
 ### Useful resources
 
-- [Example resource 1](https://css-tricks.com/almanac/selectors/c/checked/#:~:text=The%20%3Achecked%20pseudo-class%20in,toggled%20to%20an%20on%20state.) - This helped me to understand how to use :checked pseudo-class
-- [Example resource 2](https://www.smashingmagazine.com/2021/07/hsl-colors-css/) - This is a great explanation about HSL colors in CSS.
-- [Example resource 3](https://stackoverflow.com/questions/8206565/check-uncheck-checkbox-with-javascript) - This helped me to understand how to check and uncheck checkboxes with JS.
+- [CSS-Tricks - :checked](https://css-tricks.com/almanac/selectors/c/checked/#:~:text=The%20%3Achecked%20pseudo-class%20in,toggled%20to%20an%20on%20state.) - This helped me to understand how to use :checked pseudo-class
+- [Smashing Magazine - Using HSL Colors In CSS](https://www.smashingmagazine.com/2021/07/hsl-colors-css/) - This is a great explanation about HSL colors in CSS.
+- [Stackoverflow - Check/Uncheck checkbox with JavaScript](https://stackoverflow.com/questions/8206565/check-uncheck-checkbox-with-javascript) - This helped me to understand how to check and uncheck checkboxes with JS.
 
 ## Author
 
