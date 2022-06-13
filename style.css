@@ -1,6 +1,6 @@
-/* --------------
-Custom properties
-----------------*/
+/* -------------------
+    Custom properties
+----------------------*/
 
 :root {
     /* colors */
@@ -15,9 +15,9 @@ Custom properties
     --fs-400: 15px;
 }
 
-/* --------------
+/* --------
     Reset
-----------------*/
+----------*/
 
 /* https://piccalil.li/blog/a-modern-css-reset/ */
 
@@ -28,7 +28,7 @@ Custom properties
     box-sizing: border-box;
 }
 
-/* Reset margins and padding */
+/* Remove default margins and paddings */
 body,
 h1,
 h2,
@@ -41,6 +41,20 @@ picture {
     padding: 0; 
 }
 
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+  }
+
+  /* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
 input {
     appearance: none;
 }
@@ -51,30 +65,11 @@ body {
     font-size: var(--fs-400);
     color: var(--clr-white);
     background-color: var(--clr-very-dark-blue);
-    line-height: 1.5;
-    min-height: 100vh;
 }
 
-img {
-    max-width: 100%;
-    display: block;
-}
-
-/* remove animations for people who've turned them off */
-@media (prefers-reduced-motion: reduce) {  
-    *,
-    *::before,
-    *::after {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
-    }
-  }
-
-  /* ---------------
+  /* ----------
     Typography
------------------*/
+---------------*/
 h1 {
     font-weight: 700;
     line-height: 2rem;
@@ -102,21 +97,13 @@ button:focus {
 }
 
 .attribution { 
-    font-size: 11px;
+    font-size: 0.73rem;
     letter-spacing: 0.5px;
 }
 
   /* ---------------
-    Utility classes
------------------*/
-
-.margin-top {
-    margin-top: 1.8em;
-}
-
-.margin-bottom {
-    margin-bottom: 1.8em;
-}
+    Modifier classes
+--------------------*/
 
 .flex {
     display: flex;
@@ -136,12 +123,16 @@ button:focus {
     order: 4;
 }
 
+.margin-top {
+    margin-top: 1.8em;
+}
+
+.margin-bottom {
+    margin-bottom: 1.8em;
+}
+
 
 @media (min-width: 35rem) {
-    .margin {
-        margin: 2em;
-    }
-
     .margin-top {
         margin-top: 2em;
     }
@@ -151,49 +142,9 @@ button:focus {
     }
 }
 
- /* ---------------
-    Components
------------------*/
-
-fieldset {
-    border: none;
-    display: flex;
-    justify-content: space-between;
-}
-
-input[type=radio]:hover + label {
-    background-color: var(--clr-light-grey);
-}
-
-input[type=radio]:focus + label {
-    border: 2px dotted var(--clr-white);
-}
-
-input[type=radio]:checked + label {
-    background-color: var(--clr-orange);
-}
-
-label {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background-color: var(--clr-medium-grey);
-    padding-top: 0.33rem;
-    cursor: pointer;
-}
-
-button {
-    background-color: var(--clr-orange);
-    border: 0;
-    border-radius: 20px;
-    padding: 1.3em 0;
-    width: 100%;
-    cursor: pointer;
-}
-
-/* ---------------
+/* ---------
     Layout
------------------*/
+------------*/
 
 .container {
     background-color: var(--clr-dark-blue);
@@ -232,9 +183,49 @@ button {
     }
 }
 
-/* ---------------
-    Modal
------------------*/
+ /* -----------
+    Components
+---------------*/
+
+fieldset {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type=radio]:hover + label {
+    background-color: var(--clr-light-grey);
+}
+
+input[type=radio]:focus + label {
+    border: 2px dotted var(--clr-white);
+}
+
+input[type=radio]:checked + label {
+    background-color: var(--clr-orange);
+}
+
+label {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--clr-medium-grey);
+    padding-top: 0.33em;
+    cursor: pointer;
+}
+
+button {
+    background-color: var(--clr-orange);
+    border: 0;
+    border-radius: 20px;
+    padding: 1.3em 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* -------------------------
+    Modal - thank you state
+---------------------------*/
 
 #overlay {
     width: 100%;
