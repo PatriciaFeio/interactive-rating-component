@@ -1,85 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- head section -->
+  <!-- head section -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css" media="screen">
-  <title>Frontend Mentor | Interactive rating component</title>
-</head>
-<!-- end head section -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" media="screen" />
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <!-- end head section -->
 
-<!-- body section -->
-
-<body class="flex">
-
-  <div class="container">
-
-    <!-- Rating state start -->
-    <header>
-      <img src="images/icon-star.svg" alt="" class="header-img margin-bottom">
-      <h1>How did we do?</h1>
-    </header>
-
-    <main>
-      <p class="margin-top margin-bottom">Please let us know how we did with your support request. All feedback is
-        appreciated
-        to help us improve our offering!</p>
-
-      <form>
-        <fieldset>
-          <div>
-            <input type="radio" name="ratings" value="1" id="rating-1">
-            <label for="rating-1" class="flex">1</label>
-          </div>
-          <div>
-            <input type="radio" name="ratings" value="2" id="rating-2">
-            <label for="rating-2" class="flex">2</label>
-          </div>
-          <div>
-            <input type="radio" name="ratings" value="3" id="rating-3">
-            <label for="rating-3" class="flex">3</label>
-          </div>
-          <div>
-            <input type="radio" name="ratings" value="4" id="rating-4">
-            <label for="rating-4" class="flex">4</label>
-          </div>
-          <div>
-            <input type="radio" name="ratings" value="5" id="rating-5">
-            <label for="rating-5" class="flex">5</label>
-          </div>
-        </fieldset>
-        <button type="submit" id="form-submit-btn" class="margin-top">Submit</button>
-      </form>
-    </main>
-    <!-- Rating state ends -->
-
-    <!-- Modal - thank you state start -->
-    <div id="overlay" class="flex">
-      <div id="modal">
-        <img src="images/illustration-thank-you.svg" alt="">
-        <h2 class="modal-heading order-3">Thank you!</h2>
-        <p id="modal-msg" class="order-2"></p>
-        <p class="order-4">We appreciate you taking the time to give a rating. If you ever need more support,
-          don’t hesitate to get in touch!</p>
-      </div>
-    </div>
-    <!-- Thank you state ends -->
-  </div>
-
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://github.com/PatriciaFeio" target="_blank">Patrícia Feio</a>.
-  </footer>
-
-  <script src="index.js"></script>
   <!-- body section -->
-</body>
 
+  <body class="flex">
+    <div class="container">
+      <!-- Rating state start -->
+      <header>
+        <img
+          src="images/icon-star.svg"
+          alt=""
+          class="header-img margin-bottom"
+        />
+        <h1>How did we do?</h1>
+      </header>
+
+      <main>
+        <p class="margin-top margin-bottom">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+
+        <form>
+          <fieldset>
+            <div>
+              <input type="radio" name="ratings" value="1" id="rating-1" />
+              <label for="rating-1" class="flex">1</label>
+            </div>
+            <div>
+              <input type="radio" name="ratings" value="2" id="rating-2" />
+              <label for="rating-2" class="flex">2</label>
+            </div>
+            <div>
+              <input type="radio" name="ratings" value="3" id="rating-3" />
+              <label for="rating-3" class="flex">3</label>
+            </div>
+            <div>
+              <input type="radio" name="ratings" value="4" id="rating-4" />
+              <label for="rating-4" class="flex">4</label>
+            </div>
+            <div>
+              <input type="radio" name="ratings" value="5" id="rating-5" />
+              <label for="rating-5" class="flex">5</label>
+            </div>
+          </fieldset>
+          <button type="submit" id="form-submit-btn" class="margin-top">
+            Submit
+          </button>
+        </form>
+      </main>
+      <!-- Rating state ends -->
+
+      <!-- Modal - thank you state start -->
+      <div id="overlay" class="flex">
+        <div id="modal">
+          <img src="images/illustration-thank-you.svg" alt="" />
+          <h2 class="modal-heading order-3">Thank you!</h2>
+          <p id="modal-msg" class="order-2"></p>
+          <p class="order-4">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+      </div>
+      <!-- Thank you state ends -->
+    </div>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/PatriciaFeio" target="_blank">Patrícia Feio</a
+      >.
+    </footer>
+
+    <script src="index.js"></script>
+    <!-- body section -->
+  </body>
 </html>
