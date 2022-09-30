@@ -1,5 +1,5 @@
 const inputRating = document.querySelectorAll('input[name="ratings"]')
-console.log(inputRating)
+//console.log(inputRating)
 const formSubmitBtn = document.getElementById('form-submit-btn')
 const modalMsg = document.getElementById('modal-msg')
 const overlay = document.getElementById('overlay')
@@ -11,6 +11,8 @@ overlay.style.display = 'none'
 // set thank you message
 inputRating.forEach(element => {
     element.addEventListener('click', () => {
+        console.log(element)
+        console.log(element.value)
         rating = element.value 
         modalMsg.innerHTML = `you selected ${rating} out of 5`
     })
@@ -29,7 +31,7 @@ formSubmitBtn.addEventListener('click', function(event) {
             setTimeout(() => {
                 overlay.style.display = 'none'
             }, 2000);
-        } else {}
+        }
     })
 })
 
